@@ -1,15 +1,30 @@
 <%# navigation styled for Bootstrap 3.0 %>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+<nav class="navbar navbar-inverse nav-font">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
     </div>
+    <div class="col-md-3">
+      <%= link_to image_tag('MK_Logowhite.png'), root_path, class: 'brand' %>
+      </div>
+        <div class="col-md-6 no-float text-center">
+        <%= link_to 'ABOUT  |', about_path, class: 'navbar-brand' %>
+        <%= link_to 'PLANS  |', about_path, class: 'navbar-brand'  %>
+        <%= link_to 'COMMUNITIES  |', about_path, class: 'navbar-brand' %>
+        <%= link_to 'CONTACT US ', about_path, class: 'navbar-brand' %>
+      </div>
+      <div>
+        <h4 class="text-right col-md-3 phone">Phone: 801.489.4278</h4>
+        <h4 class="text-right col-md-3 phone">Fax: 801.489.0063</h4>
+      </div>
+      </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <%= render 'layouts/navigation_links' %>
@@ -17,3 +32,4 @@
     </div>
   </div>
 </nav>
+

@@ -1,6 +1,6 @@
 class StaticPageController < ApplicationController
 
-def Home
+  def Home
   	
   end
 

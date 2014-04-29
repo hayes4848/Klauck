@@ -5,7 +5,14 @@
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
 
 // import the CSS framework
+
+$navbar-height: 115px;
+$navbar-margin-bottom: 0px;
+$navbar-default-link-color: white;
+$navbar-inverse-bg: #29516B;
+
 @import "bootstrap";
+
 
 // make all images responsive by default
 img {
